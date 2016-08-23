@@ -325,31 +325,33 @@
 }
 
 .context-menu {
-    background: rgba(40, 43, 48, 0.93) !important;
+    background: #191b1d !important;
 	position: fixed;
     z-index: 1005;
     display: inline-block;
     width: 170px;
     border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.2);
-	transition: .45s;
+    box-shadow: 0 3px 6px rgba(0,0,0,.4);
+	transition: .32s;
 }
 
 .context-menu:hover{
-    background: rgba(40, 43, 48, 0.93) !important;
-	transition: .45s;}
+    background: #191b1d !important;
+	transition: .32s;}
     
 .context-menu .item.danger {
     color: #FB2222!important;
 }
 
 .context-menu .item.danger:hover {
-    color: rgba(255, 0, 0, 0.92)!important;
+    color: rgba(255, 0, 0, 1)!important;
+	transition: .32s;
 }
 
 .context-menu .item:hover,
 .context-menu .item-subMenu {
-	background-color:rgba(40, 43, 48, 0.93) !important;
+	background-color: #1f2123 !important;
+    transition: .32s;
 }
 
 .account .btn-deafen, .account .btn-settings {
@@ -1016,25 +1018,11 @@
     border: 2px solid rgba(243, 243, 243, 0);
 }
 
-.context-menu {
-    background: #2e3136 !important;
-    position: fixed;
-    z-index: 1005;
-    display: inline-block;
-    width: 170px;
-    border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.2);
-}
-
-.context-menu:hover {
-    background: rgba(32, 35, 37, 1) !important;
-}
 
 .context-menu .item {
-    color: rgb(31, 34, 36);
+    color: #191b1d;
     font-size: 13px;
     line-height: 16px;
-    font-weight: 600;
     box-sizing: border-box;
     margin: 0px 0;
     padding: 10px 9px;
@@ -1043,11 +1031,11 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     border-radius: 0px;
-    transition: .45s;
+    transition: .32s;
 }
 
 .slider-bar-fill {
-    background: #191B1D;
+    background: #709ddb;
     height: 100%;
 }
 
@@ -1169,7 +1157,6 @@
     transition: .45s;}
 
 .channel-members .member .member-activity:hover , .channel-members .member .member-username-inner:hover{
-    transform: translate3d(2px,0px,0px);
 	transition: .45s;}
 
 .channel-members .member .member-activity, .channel-members .member .member-username-inner {
@@ -1816,10 +1803,6 @@
 .user-settings-modal a:hover {
     color: #bf2525;
     transition: .32s;
-}
-
-.channel-members .member .member-activity:hover, .channel-members .member .member-username-inner:hover {
-    transition: .45s;
 }
 
 #user-profile-modal .tab-bar .tab-bar-item {
