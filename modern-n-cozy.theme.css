@@ -1,4 +1,4 @@
-//META{"name":"Modern_N'_Cozy","description":"Theme made by Kyu","author":"Kyu","version":"1.5.0"}*//{}
+//META{"name":"Modern_N'_Cozy","description":"Theme made by Kyu","author":"Kyu","version":"1.5.5"}*//{}
 
 
 
@@ -352,6 +352,10 @@
 .context-menu .item-subMenu {
 	background-color: #1f2123 !important;
     transition: .32s;
+}
+
+.context-menu .item:hover{
+    color: #7289da;
 }
 
 .account .btn-deafen, .account .btn-settings {
@@ -880,42 +884,39 @@
 }
 
 #user-profile-modal .header {
+    background: #191b1d;
+}
+
+#user-profile-modal .tab-bar-container {
     background-color: rgba(25, 27, 29, 1);
-    background-image: none;
-    background-size: 270px 213px;
-    height: 94px;
-    box-sizing: border-box;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    padding: 0 0 10px 173px;
-    -webkit-box-pack: end;
-    -o-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
+    border-bottom: 1px solid rgba(25, 27, 29, 1);
 }
 
 #user-profile-modal .avatar-profile {
     position: absolute;
-    top: 36px;
+    top: 10px;
     left: 19px;
     z-index: 1;
-    border: 3px solid #fff;
-    background-color: #fff;
+    border: 5px solid rgba(25, 27, 29, 0);
+    background-color: #0e0e0e;
 }
 
+
 .avatar-profile{
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    box-shadow: none;
+}
+
+.tab-bar.TOP .tab-bar-item{
+    transition: .32s;}
+
+.tab-bar.TOP .tab-bar-item:hover {
+    border-bottom: 2px solid #191b1d;
+    color: #7289da;
+    transition: .32s;
+}
+
+#user-profile-modal .guilds .guild .status {
+    border: 2px solid rgba(255, 255, 255, 0);
 }
 
 #user-profile-modal .header .discord-tag .discriminator {
@@ -924,28 +925,16 @@
 }
 
 #user-profile-modal {
-    width: 570px;
-    height: 546px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 3px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    min-height: 360px;
-    -webkit-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    width: 640px;
+    height: 555px;
 }
 
 #user-profile-modal .tab-bar {
     background: rgba(25, 27, 29, 1);
-    border-bottom: 1px solid #f0f0f0;
-    padding: 5px 20px 0;
+    border-bottom: none;
     margin-bottom: 0;
 }
+
 
 #user-profile-modal .sub-header {
     background: rgba(25, 27, 29, 1);
@@ -1020,7 +1009,7 @@
 
 
 .context-menu .item {
-    color: #191b1d;
+    color: #7b838f;
     font-size: 13px;
     line-height: 16px;
     box-sizing: border-box;
@@ -1226,8 +1215,22 @@
 }
 
 .tab-bar.TOP .tab-bar-item.selected {
-    border-bottom: 5px solid #7289da;
+    border-bottom: 4px solid #7289da;
     color: #7289da;
+}
+
+#user-profile-modal .guilds .guild:hover {
+    background: rgb(255, 255, 255, 0);
+    color: #2e3136;
+}
+
+#user-profile-modal .avatar-profile .status {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid rgba(255, 255, 255, 0);
+    bottom: 5px;
+    right: 5px;
 }
 
 .member-roles .member-role{
@@ -1555,14 +1558,8 @@
     border-top-right-radius: 2px;}
 
 .form .form-actions {
-    background-color: #191B1D;
-    border-top: 1px solid #f0f0f0;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 18px 40px;
-    border-radius: 0 0 2px 2px;
-    text-align: right;
-    flex-shrink: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #ffffff;
 }
 
 .form .btn-default {
@@ -1575,6 +1572,19 @@
 
 .form .btn-default:hover {
     border-bottom: 2px solid rgba(148, 148, 148, 0);
+}
+
+.form header {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.form .form-header {
+    padding: 0 40px;
+    color: #000000;
+    background: #7289da;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .region-select .region-select-inner {
@@ -1823,4 +1833,13 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.clipboard-input-inner {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.clipboard-input-inner button {
+    background-color: rgb(225, 227, 229);
 }
